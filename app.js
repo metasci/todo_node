@@ -13,8 +13,8 @@ app.use(express.static('./public'));
 
 // fire controllers
 todoController(app);
+var port = process.env.PORT || 8080;
 
-
-app.listen(8080, function(){
-    console.log('listening on port 8080');
+app.listen(port, function(){
+    console.log('listening on port '+port);
 });
