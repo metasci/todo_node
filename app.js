@@ -15,6 +15,6 @@ app.use(express.static('./public'));
 todoController(app);
 
 
-app.listen(3000, function(){
-    console.log('listening on port 3000');
+app.listen(8080, function(){
+    console.log('listening on port 8080');
 });
