@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Todo list</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/styles.css">
+        <script  src="https://code.jquery.com/jquery-3.2.1.min.js"  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
+        <script src="/assets/todo-list.js"></script>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="todo-table">
+                    <form action="/todo">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="item" id="" placeholder="Add new item..." required>
+                            <span class="input-group-btn">
+                                <input class="btn btn-secondary" type="submit" value="Add item">    
+                            </span>
+                        </div>
+                    </form>
+                
+                    
+                    <ul class="list-group">
+                        <% for(var i = 0; i < todos.length; i++){ %>
+                            <li class="list-group-item"><%= todos[i].item %></li>
+                        <% } %>
+                    </ul>
+                </div>
+            </div>
+        </div>   
+    
+    </body>
+</html>

@@ -1,0 +1,37 @@
+body {
+    background-color: #071e42;
+}
+
+.row .col-md-6 {
+    margin: 50px auto;
+}
+
+#todo-table {
+    background-color: #030f21;
+    box-shadow: -2px 2px 5px black;
+    padding: 20px;
+}
+
+#todo-table input[type=text] {
+    background-color: #2c2c2d;
+    border: none;
+}
+
+#todo-table input[type=submit] {
+    background-color: #424244;
+    border: none;
+    cursor: pointer;
+}
+
+#todo-table li {
+    background-color: #030f21;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#todo-table li:hover {
+    background-color: #010914;
+    text-decoration: line-through;
+}
