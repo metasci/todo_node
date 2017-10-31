@@ -20,6 +20,10 @@ var url_encoded_parser = body_parser.urlencoded({extended: false});
 
 module.exports = function(app){
 
+    app.get('/', function(req, res){
+        res.redirect('/todo');
+    });
+
     app.get('/todo', function(req, res){
        
         // get data from mongodb and pass it to the view
